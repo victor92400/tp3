@@ -1,0 +1,31 @@
+.block_commentaire {
+    display: block;
+    width: 600px;
+    height: 200px;
+    border: 1ch;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    font-style: italic;
+}
+.button-like {
+    border: 2px solid #8a8a8a;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3rem;
+    color: #8a8a8a;
+    transition: all ease 0.4s;
+}
+.button-like:hover {
+    cursor: pointer;
+    color: #58afd1;
+    border: 2px solid #58afd1;
+}
+
+  

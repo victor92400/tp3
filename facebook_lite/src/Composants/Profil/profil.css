@@ -1,0 +1,93 @@
+.block {
+    display: block;
+    width: 600px;
+    height: 600px;
+    border: 1ch;
+    margin-top: 4%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+}
+.photo {
+    display: inline-block;
+    width: 20%;
+    height: 30%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    border-radius: 80%;
+}
+.prenom_profil {
+    display: inline;
+    float: left;
+    margin-top: 10%;
+    margin-left: 18%;
+    font-style: italic;
+}
+.nom_profil {
+    display: inline;
+    float: left;
+    margin-top: 10%;
+    margin-left: 30%;
+    font-style: italic;
+}
+.birth_profil {
+    clear: both;
+    margin-right: 50%;
+    margin-top: 24%;
+    font-style: italic;
+}
+.style_button {
+    clear: both;
+    float: right;
+    margin-top: 27%;
+    margin-right: 4%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 50 0.9rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+}
+.style_button:focus {
+    outline: none;
+}
+.draw-border {
+    box-shadow: inset 0 0 0 1px grey;
+    color: grey;
+    transition: color 0.20s 0.08333s;
+    position: relative;
+  }
+.draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+.draw-border::before {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+ }
+.draw-border::after {
+    border-top-width: 1px;
+    border-right-width: 1px;
+}
+.draw-border:hover {
+    color: #58afd1;
+ }
+.draw-border:hover::before, .draw-border:hover::after {
+    border-color: #58afd1;
+    transition: border-color 0s, width 0.20s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.20s;
+}
+.draw-border:hover::after {
+    transition-delay: 0s, 0.20s, 0s;
+}
